@@ -3,6 +3,6 @@ import App from './App';
 
 test('renders brand name logo', () => {
   render(<App />);
-  const linkElement = screen.getByText(/SP Cakes & Delight/i);
-  expect(linkElement).toBeInTheDocument();
+  const linkElements = screen.getAllByText(/SP Cakes & Delight/i);
+  expect(linkElements.length).toBeGreaterThan(0);
 });
