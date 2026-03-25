@@ -5,7 +5,7 @@ export default function CakeCard({ cake }) {
   return (
     <div className="cake-card">
       {cake.label && <p className="special-label">{cake.label}</p>}
-      {cake.preBooking only && <p className="prebooking-tag">🕐 Pre Booking Order Only</p>}
+      {cake.preBooking && <p className="prebooking-tag">🕐 Pre Booking Order Only</p>}
       {cake.image && <img src={cake.image} alt={cake.name} className="cake-image" />}
       <h3>{cake.name}</h3>
       {cake.category && <p className="category">{cake.category}</p>}
