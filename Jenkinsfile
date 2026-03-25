@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        nodejs 'node'
+    }
+
     environment {
         DOCKER_IMAGE = "sp-cakes-delight"
         DOCKER_TAG = "latest"
